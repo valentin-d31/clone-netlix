@@ -3,7 +3,7 @@ import './App.css';
 import HomeScreen from "./screens/HomeScreen";
 import Nav from "./Nav";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
-import LoginScreen from "./LoginScreen";
+import LoginScreen from "./screens/LoginScreen";
 
 function App() {
 
