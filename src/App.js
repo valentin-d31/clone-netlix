@@ -8,14 +8,14 @@ import LoginScreen from "./LoginScreen";
 function App() {
 
     //2. login auth de la route
-    const user = null;
+    const user = false;
 
   return (
     <div className="App">
         <BrowserRouter>
             <Routes>
                 {!user ? (
-                    <LoginScreen/>
+                    <Route path="/login" element={<LoginScreen/>}/>
                 ) : (
                     <Route path="/" element={<HomeScreen/>}/>
                 )}
