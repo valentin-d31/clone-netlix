@@ -5,11 +5,14 @@ import requests from "./Requests";
 import Row from "./Row";
 
 export default function HomeScreen() {
+
+    //1.2 Affichage depuis Home
     return(
         <div className="homeScreen">
         <Nav/>
             <Banner/>
             <Row
+                //1.2 lien vers la requete
                 title="NETFLIX ORIGINALS"
                 fetchUrl={requests.fetchNetflixOriginals}
                 isLargeRow
