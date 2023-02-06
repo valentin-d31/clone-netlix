@@ -11,5 +11,7 @@ const requests = {
     fetchDocumentariesMovies: `/discover/movie?api_key=${API_KEY}&with_genres=99`,
 };
 
+export default requests;
+
 //axios me permet de memoriser l'API_KEY
 //https://api.themoviedb.org/3/trending/all/week?api_key=f81980ff410e46f422d64ddf3a56dddd&language=en-US
