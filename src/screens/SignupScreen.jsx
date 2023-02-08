@@ -3,7 +3,7 @@ import {auth} from "../firebase";
 import {useRef} from "react";
 export default function SignupScreen() {
 
-    //2.1 Inscription Login & connexion verification
+    //2 Inscription Login & connexion verification
     const emailRef = useRef(null);
     const passwordRef = useRef(null);
 
