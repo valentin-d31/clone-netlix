@@ -22,6 +22,7 @@ export default function ProfileScreen() {
                     <div className="profileScreen__details">
                         <h2>{user.email}</h2>
                         <div className="profileScreen__plans"></div>
+                            <h3>Plans</h3>
                             <button
                                 //deconnexion
                                 onClick={() => auth.signOut()}
