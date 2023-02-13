@@ -2,6 +2,7 @@ import "./ProfileScreen.css"
 import Nav from "../Nav";
 import {useSelector} from "react-redux";
 import {selectUser} from "../features/userSlice";
+import {auth} from "../firebase"
 
 export default function ProfileScreen() {
 
@@ -19,7 +20,12 @@ export default function ProfileScreen() {
                     src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
                     alt=""/>
                     <div className="profileScreen__details">
-                        <h2></h2>
+                        <h2>{user.email}</h2>
+                        <div className="profileScreen__plans"></div>
+                            <button
+                                //deconnexion
+                                onClick={() => auth.signOut()}
+                                className="profileScreen__signOut">Sign Out</button>
                     </div>
                 </div>
             </div>

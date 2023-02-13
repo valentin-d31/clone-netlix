@@ -31,7 +31,7 @@ export default function Nav() {
                     alt=""
                 />
                 <img
-                    //4.profile
+                    //4.profile navigation
                     onClick={() => navigate('/profile')}
                     className="nav__avatar"
                     src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460__340.png"

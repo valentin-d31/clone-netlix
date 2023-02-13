@@ -10,8 +10,8 @@ import ProfileScreen from "./screens/ProfileScreen"; //logout>Redux
 
 function App() {
 
-    //2. login auth de la route
-    //3.redux
+    //2.1 login auth de la route
+    //3.1redux
     const user = useSelector((state) => state.user)
     const dispatch = useDispatch(); //envoie vers le state
 
@@ -30,7 +30,7 @@ function App() {
             }
         })
        return unsubscribe();
-    }, []);
+    }, [dispatch]);
 
 
   return (
