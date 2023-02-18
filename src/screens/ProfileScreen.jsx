@@ -3,6 +3,7 @@ import Nav from "../Nav";
 import {useSelector} from "react-redux";
 import {selectUser} from "../features/userSlice";
 import {auth} from "../firebase"
+import PlanScreen from "./PlanScreen";
 
 export default function ProfileScreen() {
 
@@ -22,7 +23,9 @@ export default function ProfileScreen() {
                     <div className="profileScreen__details">
                         <h2>{user.email}</h2>
                         <div className="profileScreen__plans"></div>
-                            <h3>Plans</h3>
+                            <h3>Plans //Partie 5.1 abonnement netflix (stripe)</h3>
+                            <PlanScreen/>
+
                             <button
                                 //deconnexion
                                 onClick={() => auth.signOut()}
